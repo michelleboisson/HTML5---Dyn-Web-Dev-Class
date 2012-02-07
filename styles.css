@@ -1,0 +1,60 @@
+*{padding: 0; margin: 0;}
+
+
+/*------------------------------
+ COLOR THEME
+ 
+ FRENCH - http://kuler.adobe.com/#themeID/1697634
+
+base color - beige : 	#A68D60
+light grey green:   	#76A19A
+dark purple:		#272123
+light grey blue:	#B0C5BB
+orange: 		#D9593D
+
+ 
+------------------------------*/
+
+body 
+{
+	font-family: Arial, sans-serif;
+	font-size: 100%;
+	background:#76A19A;
+}
+
+#container {
+	width: 30%;
+	border: #666 1px solid;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	color: #2D2D2D;
+	background: #B0C5BB;
+	padding: 20px 30px;
+	margin: 5% auto;
+}
+
+#header{
+	font-size: 150%;
+	margin-bottom: 1em;
+}
+
+ul#weeklink {
+/*	margin-left:10%;*/
+	width: inherit;	
+	list-style-type: none;
+}
+ul#weeklink li{
+/*	width: 100%;
+	height: 3em;
+	display: block;*/
+}
+ul#weeklink li a {
+	display: block;
+	width: 100%;
+/*	height: 3em;*/
+	padding: 1em 0;
+}
+ul#weeklink li:hover {
+	background: #ccc;
+	color: green;
+}

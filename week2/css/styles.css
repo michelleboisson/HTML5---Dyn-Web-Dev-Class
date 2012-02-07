@@ -1,0 +1,122 @@
+/*
+ purple: #8f14ae;
+*/
+
+
+* {margin: 0; padding: 0; }
+
+body {
+    /*background: url('images/sky.jpeg') fixed no-repeat;*/
+    background: url('images/bridge.jpg') fixed no-repeat;
+    color: #111111;
+    font-family: Arial,Verdana,sans-serif;
+    font-size: 72.5%;
+}
+p { font-size: 1.3em}
+
+
+.leftCol-1Third {
+    float: left;
+    width: 30%;
+}
+
+.rightCol-2Thirds{
+/*    width: 65%;
+    margin-left:33%;
+*/
+    width: auto;
+    margin-left: 30%;
+}
+
+.fullwidth{
+    clear: both;
+    width: 100%;
+}
+
+#container{
+	margin: 3em auto;
+	width: 80%;
+        background: #FFF;
+/*        border: 1px solid #666; */
+        padding: 3em;
+        padding-bottom: 20px;
+}
+
+#header{
+    height: auto;
+    border-bottom: 1px solid #666;
+    padding-bottom: 3em;
+}
+
+#logo {
+ /*   background: url('images/betherenyc_logo.png') no-repeat;*/
+    width: 250px;
+    height: 160px;
+}
+
+#eventsorter {
+    width: auto;
+}
+
+
+#sidemenu ul{
+    list-style-type: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 480px;
+}
+
+#sidemenu ul li {
+    padding: 1em;
+    margin-right: 20px;
+}
+
+#sidemenu ul li a{
+    color: #111111;
+    text-decoration: none;
+}
+
+#sidemenu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+#maincontent {
+    clear: both;
+    width: 100%;
+    margin-top:50px;
+}
+#signup {
+    float:right;
+    width: 33%;
+    border: 1px #ccc solid;
+    margin-left: 65%;
+}
+
+#categoryholder {
+    width:65%;
+    
+}
+.categorylist {
+    width: 30%;
+    padding: 1.2em;
+    float: left;
+}
+.categorylist h1 {
+    color: #8f14ae;
+}
+
+#footer {
+    clear: both;
+}
+
+/*----------------- SUBMIT ------------*/
+#submitForm input{
+    padding: 4px;
+    font-size:16px;  
+    display: block;
+    margin: 1em 0;
+}
+
+.hidden {
+    display:none;
+}

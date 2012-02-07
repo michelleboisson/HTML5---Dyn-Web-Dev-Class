@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<title>HTML5 - ITP Spring 2012 - Michelle Boisson</title>
+		<link rel="stylesheet" href="css/styles.css" type="text/css" media="all" title="no title" charset="utf-8"/>
+                <link rel="stylesheet" href="css/jquery-ui-1.8.17.custom.css" type="all" charset="utf-8"/>
+                <script src="js/jquery-1.7.1.js" type="text/javascript" ></script>
+                <script src="js/jquery-ui-1.8.17.custom.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+	
+	<div id="container">
+		<div id="header">
+			<h1 id="logo"><a href="#"><img src="images/betherenyc_logo.png" alt="BeThereNYC" title="BeThereNYC"></a></h1>
+			<h2>free cheap here now</h2>
+		</div>
+		
+
+		<div id="maincontent" class="fullwidth">
+				<div id="signup">
+					<h2>Sign Up for Reminders</h2>
+					<input id="signup" type="text" width="100%"/>
+				</div>
+                                
+                                <div id="sidemenu" class="leftCol-1Third">
+                                    <!-- ul is a list container -->
+<h2>Recently Added</h2>
+<ul id="recentlyAdded">
+    <li><h3>Black History in Sports</h3>
+        <div class="hidden">Chelsea Recreation Center<br/>
+        Feb 6, 8:00am</div>
+    </li>
+</ul>
+                                </div>
+                                
+                                <div id="submitForm" class="rightCol-2Thirds">
+                                    <h1>Add a New Event</h1>
+<!-- textbox #newTodo -->
+<input type="text" placeholder="Event Name" id="eventName" size="50" />
+<input type="text" placeholder="Date" id="eventDate" size="50" />
+<input type="text" placeholder="Time" id="eventTime" size="50" />
+<input type="text" placeholder="Place" id="eventPlace" size="50" />
+<button id="saveBtn">Add Event</button>
+
+                                  
+                                    
+                                    
+                                </div>
+
+
+                                
+                                
+				
+		</div>
+		<div id="footer">
+			Hi! I'm the footer. By Michelle Boisson
+		</div>
+	</div><!--end container -->
+        
+        
+        <script type="text/javascript">
+        
+        
+           $(document).ready(function(){
+               $("#recentlyAdded h3").live("click", function(){           
+                    $(this).siblings().toggle("slow");
+               });
+           
+		$( "#eventDate" ).datepicker();
+    
+            });
+        
+        var saveBtn = document.getElementById("saveBtn");
+       //saveBtn.addEventListener("click", function(e){ alert("AH!");});
+        saveBtn.addEventListener("click", function(e){
+            //alert("clicked!");
+            var eventNameTxt = document.getElementById("eventName").value;
+            var eventDateTxt = document.getElementById("eventDate").value;
+            var eventTimeTxt = document.getElementById("eventTime").value;
+            var eventPlaceTxt = document.getElementById("eventPlace").value;
+            
+            var newEventItem = document.createElement("li");
+            newEventItem.innerHTML = "<h3>" + eventNameTxt + "</h3><div class=hidden>" + eventDateTxt + ", " + eventTimeTxt + "<br/>" + eventPlaceTxt + "</div>";
+
+                    
+                    var listContainer = document.getElementById("recentlyAdded");
+                    listContainer.appendChild(newEventItem);
+                
+                    //clear fields
+                    eventNameTxt = " ";
+                    eventDateTxt = " ";
+                    eventTimeTxt = " ";
+                    eventPlaceTxt = " ";
+            
+            });
+        
+     
+        
+        
+        
+      </script>
+        
+        
+	</body>
+</html>
